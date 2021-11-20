@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { App } from './components';
 import reportWebVitals from './reportWebVitals';
+import { CommentModal } from './components/CommentModal';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CommentModal title={'modal1'} message={'123456789012345678901234567890'} />
+    <CommentModal
+      title={'modal2'}
+      message={'abcdefg\nhijklmn\nopqrstu\nvwxyz\n26words'}
+    />
+    {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
